@@ -2,9 +2,9 @@ import NextAuth, { AuthError, CredentialsSignin } from "next-auth"
 import GoogleProvider from "next-auth/providers/google"
 import FacebookProvider from "next-auth/providers/facebook"
 import CredentialsProvider from "next-auth/providers/credentials"
-import { User } from "./models/userModel"
 import { compare } from "bcryptjs"
 import { connectToDatabase } from "./lib/utils"
+import User from "./models/userModel"
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
     providers: [

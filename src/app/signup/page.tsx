@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { connectToDatabase } from "@/lib/utils";
-import { User } from "@/models/userModel";
+import User from "@/models/userModel";
 import { hash } from "bcryptjs";
 import Link from 'next/link';
 import { redirect } from "next/navigation";
